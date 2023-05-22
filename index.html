@@ -1,0 +1,47 @@
+<!-- The resources used for this assignment are
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/ and ChatGPT Plus.-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Inventory Website</title>
+  </head>
+  <body>
+    <header>
+      <h1>Inventory Management</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form id="itemForm">
+        <label for="itemName">Item Name:</label>
+        <input id="itemName" value="Sample Item" required />
+        <label for="itemDescription">Description:</label>
+        <input id="itemDescription" value="Sample Description" required />
+        <label for="itemPrice">Price:</label>
+        <input
+          id="itemPrice"
+          type="number"
+          step="0.01"
+          value="10.99"
+          required
+        />
+        <label for="itemImage">Image URL:</label>
+        <input
+          id="itemImage"
+          value="https://picsum.photos/id/1/200/300"
+          required
+        />
+        <button type="submit">Add Item</button>
+      </form>
+      <ul id="itemList"></ul>
+      <button id="clearAll">Delete All Items</button>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
